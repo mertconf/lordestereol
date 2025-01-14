@@ -5,13 +5,13 @@ import { Helmet } from "react-helmet";
 const Projects = () => {
 
   const projects = [
-    { icon: `fa-solid fa-earth-europe`, title: "aixe.dev", description: "The website you're currently on! Made with React and utilises serverless functions.", url: "https://aixe.dev/" },
+    { icon: `fa-solid fa-truck`, title: "BYK Logistics™ | Owner", description: "BYK Logistics™ TruckersMP oyununun en başarılı ve en büyük Türk ekiplerinden biridir. Ekibimizin amacı TruckersMP oynamak, eğlenmek, sohbet etmek, konvoylar yapmak, diğer ekiplerin konvoylarına katılmak vb. Sende TruckersMP oyunuyorsan ekibimize göz atmanı öneririm.", url: "https://truckersmp.com/vtc/71445" },
   ]
 
   return (
     <div>
       <Helmet>
-        <title>Projects</title>
+        <title>projelerim | lordestereol</title>
       </Helmet>
 
       <Navbar />
@@ -19,10 +19,10 @@ const Projects = () => {
       <div className='sm:ml-32'>
         <div className='mx-auto max-w-4xl px-8 sm:px-0'>
           <motion.div initial={{ opacity: 0, translateY: 30 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.2 }}>
-            <h1 className='text-5xl font-bold'>Projects</h1>
+            <h1 className='text-5xl font-bold'>Projelerim</h1>
           </motion.div>
           <motion.div initial={{ opacity: 0, translateY: 30 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.3 }}>
-            <p className='text-gray-400 mt-2'>A list of all the projects I've worked on or I'm currently working on.</p>
+            <p className='text-gray-400 mt-2'>İşte, şu anda üzerinde çalıştığım projelerim.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, translateY: 30 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.5 }} className='flex flex-col gap-6 mt-8'>
             {projects.map((project, index) => (
