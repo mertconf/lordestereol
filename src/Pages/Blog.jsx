@@ -6,13 +6,13 @@ import { Helmet } from "react-helmet";
 const Blog = () => {
   const navigate = useNavigate();
   const blogs = [
-    { title: "Introducing My Blog; Development and Life", description: "Introducing my new blog focusing on development and life. Join me on this journey as I share my experiences with web development, programming languages and frameworks, and personal growth.", url: "development" },
+    { title: "Örnek Blog", description: "yenisi yazılacak.", url: "development" },
   ]
 
   return (
     <div>
       <Helmet>
-        <title>Blog</title>
+        <title>blog | lordestereol</title>
       </Helmet>
 
       <Navbar />
@@ -23,7 +23,7 @@ const Blog = () => {
             <h1 className='text-5xl font-bold'>Blog</h1>
           </motion.div>
           <motion.div initial={{ opacity: 0, translateY: 30 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.3 }}>
-            <p className='text-gray-400 mt-2'>A collection of blog posts I've written. Sorted chronologically.</p>
+            <p className='text-gray-400 mt-2'>Yazdığım kısa yazılar (henüz başlanmadı)</p>
           </motion.div>
 
           <motion.div className='mt-8' initial={{ opacity: 0, translateY: 30 }} animate={{ opacity: 1, translateY: 0 }} transition={{ delay: 0.5 }}>
